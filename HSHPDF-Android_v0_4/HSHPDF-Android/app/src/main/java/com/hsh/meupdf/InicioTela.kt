@@ -1,5 +1,3 @@
-// Criador da fonte: Henrique de Souza Henrique
-// Coautor e assistente de IA: Claude (Anthropic)
 package com.hsh.meupdf
 
 import androidx.compose.foundation.Image
@@ -102,7 +100,6 @@ fun InicioTela(
                 }
             }
         }
-        Text("Criador da fonte: Henrique de Souza Henrique\nCoautor e assistente de IA: Claude (Anthropic)",
             fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp))
     }
 
