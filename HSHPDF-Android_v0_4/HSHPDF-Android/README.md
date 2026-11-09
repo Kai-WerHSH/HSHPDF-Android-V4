@@ -63,7 +63,7 @@ só as selecionadas ou um intervalo; **qualidade JPEG e tamanho** à escolha (re
 
 ## Se a compilação falhar
 Escrito sem poder compilar no ambiente de criação. Abra a execução ❌ → passo vermelho → copie as linhas que começam
-com `e:` e envie ao Claude; costuma ser correção de uma linha.
+com `e:` e envie para análise; costuma ser correção de uma linha.
 
 ## Observações
 - MuPDF é **AGPL**: ok para uso pessoal; se um dia distribuir o app, a licença exige abrir o código.
