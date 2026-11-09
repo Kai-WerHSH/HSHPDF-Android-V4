@@ -1,5 +1,3 @@
-// Criador da fonte: Henrique de Souza Henrique
-// Coautor e assistente de IA: Claude (Anthropic)
 package com.hsh.meupdf
 
 import android.content.Context
