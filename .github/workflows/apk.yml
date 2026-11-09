@@ -1,0 +1,35 @@
+name: Compilar APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "HSHPDF-Android_v0_4/HSHPDF-Android/**"
+      - ".github/workflows/apk.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+      - name: Configurar Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: 17
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Compilar APK
+        working-directory: HSHPDF-Android_v0_4/HSHPDF-Android
+        run: gradle assembleDebug
+      - name: Disponibilizar APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: MeuPDF-V0.4-APK
+          path: HSHPDF-Android_v0_4/HSHPDF-Android/app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
