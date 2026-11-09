@@ -1,4 +1,3 @@
-// Criador da fonte: Henrique de Souza Henrique
 package com.hsh.meupdf
 
 import android.app.Activity
