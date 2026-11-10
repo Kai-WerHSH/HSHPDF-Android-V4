@@ -100,7 +100,6 @@ fun InicioTela(
                 }
             }
         }
-            fontSize = 11.sp, color = MaterialTheme.colorScheme.onSurfaceVariant, modifier = Modifier.padding(top = 8.dp))
     }
 
     if (erro != null) {
